@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A62D78D0-AFFB-4434-A005-A77D9978A37D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3FA4B49D-0F9F-42D1-BA32-8F74F1CD2B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Api", "src\CashFlow.Api\CashFlow.Api.csproj", "{ED224385-87C1-433F-9373-F671DB4C2DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Domain", "src\CashFlow.Domain\CashFlow.Domain.csproj", "{A6824D04-3D38-4A1D-9C11-87673B8B8C58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Application", "src\CashFlow.Application\CashFlow.Application.csproj", "{41A030D5-A9C2-47C2-AE77-1C23BE44B8B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Communication", "src\CashFlow.Communication\CashFlow.Communication.csproj", "{6C2269F0-712F-408B-B661-AD6BFE754075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Exception", "src\CashFlow.Exception\CashFlow.Exception.csproj", "{D2160EA6-D4A2-4BF4-AD63-4FF2706EEE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Infrastructure", "src\CashFlow.Infrastructure\CashFlow.Infrastructure.csproj", "{712A068F-4D39-47E0-9BA6-A8EC1209A82A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED224385-87C1-433F-9373-F671DB4C2DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED224385-87C1-433F-9373-F671DB4C2DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED224385-87C1-433F-9373-F671DB4C2DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED224385-87C1-433F-9373-F671DB4C2DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6824D04-3D38-4A1D-9C11-87673B8B8C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6824D04-3D38-4A1D-9C11-87673B8B8C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6824D04-3D38-4A1D-9C11-87673B8B8C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6824D04-3D38-4A1D-9C11-87673B8B8C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41A030D5-A9C2-47C2-AE77-1C23BE44B8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A030D5-A9C2-47C2-AE77-1C23BE44B8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A030D5-A9C2-47C2-AE77-1C23BE44B8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A030D5-A9C2-47C2-AE77-1C23BE44B8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C2269F0-712F-408B-B661-AD6BFE754075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C2269F0-712F-408B-B661-AD6BFE754075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C2269F0-712F-408B-B661-AD6BFE754075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C2269F0-712F-408B-B661-AD6BFE754075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2160EA6-D4A2-4BF4-AD63-4FF2706EEE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2160EA6-D4A2-4BF4-AD63-4FF2706EEE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2160EA6-D4A2-4BF4-AD63-4FF2706EEE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2160EA6-D4A2-4BF4-AD63-4FF2706EEE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{712A068F-4D39-47E0-9BA6-A8EC1209A82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712A068F-4D39-47E0-9BA6-A8EC1209A82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{712A068F-4D39-47E0-9BA6-A8EC1209A82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{712A068F-4D39-47E0-9BA6-A8EC1209A82A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED224385-87C1-433F-9373-F671DB4C2DCC} = {A62D78D0-AFFB-4434-A005-A77D9978A37D}
+		{A6824D04-3D38-4A1D-9C11-87673B8B8C58} = {A62D78D0-AFFB-4434-A005-A77D9978A37D}
+		{41A030D5-A9C2-47C2-AE77-1C23BE44B8B1} = {A62D78D0-AFFB-4434-A005-A77D9978A37D}
+		{6C2269F0-712F-408B-B661-AD6BFE754075} = {A62D78D0-AFFB-4434-A005-A77D9978A37D}
+		{D2160EA6-D4A2-4BF4-AD63-4FF2706EEE87} = {A62D78D0-AFFB-4434-A005-A77D9978A37D}
+		{712A068F-4D39-47E0-9BA6-A8EC1209A82A} = {A62D78D0-AFFB-4434-A005-A77D9978A37D}
+	EndGlobalSection
+EndGlobal
