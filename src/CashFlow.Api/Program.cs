@@ -1,4 +1,5 @@
 using CashFlow.Api.Filter;
+using CashFlow.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Add Middleware
+app.UseMiddleware<CultureMiddleware>();
 
 app.UseHttpsRedirection();
 

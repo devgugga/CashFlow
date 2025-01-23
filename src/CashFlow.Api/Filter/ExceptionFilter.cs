@@ -1,5 +1,4 @@
 ﻿using CashFlow.Communication.responses;
-using CashFlow.Exception;
 using CashFlow.Exception.BaseExceptions;
 using CashFlow.Exception.Resources;
 using Microsoft.AspNetCore.Mvc;
@@ -12,13 +11,9 @@ public class ExceptionFilter : IExceptionFilter
     public void OnException(ExceptionContext context)
     {
         if (context.Exception is CashFlowException)
-        {
             HandleProjectException(context);
-        }
         else
-        {
             ThrowUnknownError(context);
-        }
     }
 
     private static void HandleProjectException(ExceptionContext context)
@@ -47,6 +42,5 @@ public class ExceptionFilter : IExceptionFilter
 
         context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
         context.Result = new ObjectResult(errorResponse);
-
     }
 }
