@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A62D78D0-AFFB-4434-A005-A77D9978A37D}"
+	ProjectSection(SolutionItems) = preProject
+		src\appsettings.Development.json = src\appsettings.Development.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3FA4B49D-0F9F-42D1-BA32-8F74F1CD2B16}"
 EndProject
