@@ -10,7 +10,7 @@ namespace CashFlow.Application.UseCases.Expenses.Register;
 
 internal class RegisterExpenseUseCase(IExpensesRepository repository, IUnitOfWork unitOfWork) : IRegisterExpenseUseCase
 {
-    public ResponseRegisterExpenseJson Execute(RequestRegisterExpenseJson request)
+    public async Task<ResponseRegisterExpenseJson> Execute(RequestRegisterExpenseJson request)
     {
         Validate(request);
 
@@ -23,11 +23,16 @@ internal class RegisterExpenseUseCase(IExpensesRepository repository, IUnitOfWor
             PaymentType = (PaymentType)request.PaymentType
         };
 
-        repository.Add(entity);
+        await repository.Add(entity);
 
-        unitOfWork.Commit();
+        await unitOfWork.Commit();
 
-        return new ResponseRegisterExpenseJson();
+        var response = new ResponseRegisterExpenseJson
+        {
+            Title = request.Title
+        };
+
+        return response;
     }
 
     private static void Validate(RequestRegisterExpenseJson request)
