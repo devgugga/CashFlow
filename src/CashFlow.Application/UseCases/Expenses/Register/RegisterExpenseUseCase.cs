@@ -1,5 +1,6 @@
 ﻿using CashFlow.Communication.Requests;
 using CashFlow.Communication.responses;
+using CashFlow.Domain;
 using CashFlow.Domain.Entities;
 using CashFlow.Domain.Enums;
 using CashFlow.Domain.Repositories.Expenses;
@@ -7,7 +8,7 @@ using CashFlow.Exception.BaseExceptions;
 
 namespace CashFlow.Application.UseCases.Expenses.Register;
 
-internal class RegisterExpenseUseCase(IExpensesRepository repository) : IRegisterExpenseUseCase
+internal class RegisterExpenseUseCase(IExpensesRepository repository, IUnitOfWork unitOfWork) : IRegisterExpenseUseCase
 {
     public ResponseRegisterExpenseJson Execute(RequestRegisterExpenseJson request)
     {
@@ -23,6 +24,8 @@ internal class RegisterExpenseUseCase(IExpensesRepository repository) : IRegiste
         };
 
         repository.Add(entity);
+
+        unitOfWork.Commit();
 
         return new ResponseRegisterExpenseJson();
     }
